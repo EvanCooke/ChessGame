@@ -39,6 +39,8 @@ for(let i = 0; i < 8; i++){
     pieces.push({ image: "/assets/images/Chess_plt60.png", x: i, y: 1 });
 }
 
+
+
 let activePiece: HTMLElement | null = null;
 
 function grabPiece(e: React.MouseEvent){
@@ -75,6 +77,8 @@ function dropPiece(e: React.MouseEvent){
 }
 
 export default function Chessboard(){
+  const chessBoardRef = useRef(null);
+
   let board = [];
   let number = 0;
 

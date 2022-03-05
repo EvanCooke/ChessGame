@@ -1,4 +1,5 @@
 //import React from 'react';
+// npm run start
 
 import './Chessboard.css'
 import Tile from './Tile/Tile'
@@ -104,6 +105,7 @@ export default function Chessboard(){
     onMouseDown={e => grabPiece(e)}
     onMouseUp={(e) => dropPiece(e)}
     id="chessboard"
+    ref={ChessboardRef}
     >
     {board}
   </div>;
